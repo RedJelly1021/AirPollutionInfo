@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirPollutionInfo", "AirPollutionInfo\AirPollutionInfo.csproj", "{A10BA7C5-28A0-4706-BBFC-9196450EAB0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A10BA7C5-28A0-4706-BBFC-9196450EAB0F}.Debug|x86.ActiveCfg = Debug|x86
+		{A10BA7C5-28A0-4706-BBFC-9196450EAB0F}.Debug|x86.Build.0 = Debug|x86
+		{A10BA7C5-28A0-4706-BBFC-9196450EAB0F}.Release|x86.ActiveCfg = Release|x86
+		{A10BA7C5-28A0-4706-BBFC-9196450EAB0F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACAB15A5-4434-4A56-BF28-8425B54D2A9C}
+	EndGlobalSection
+EndGlobal
