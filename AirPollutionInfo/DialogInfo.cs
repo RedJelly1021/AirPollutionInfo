@@ -65,7 +65,7 @@ namespace AirPollutionInfo
 			}
 		}
 
-		//정규식으로 xml태그 제거하는 함수
+		//정규식패턴 xml태그 제거하는 함수
 		private string GetPlainTextFromHtml(string text)
 		{
 			string htmlTagPattern = "<[^>]*>";

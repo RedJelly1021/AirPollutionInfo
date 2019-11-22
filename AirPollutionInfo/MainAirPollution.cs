@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using Telerik.WinControls;
 using Telerik.WinControls.UI;
 
 namespace AirPollutionInfo
 {
 	public partial class AirPollutionInfo : RadForm
 	{
+		DialogInfo dig;
 		string city = string.Empty;
 
 		public AirPollutionInfo()
@@ -23,111 +17,96 @@ namespace AirPollutionInfo
 		private void ButtonClick(object sender, EventArgs e)
 		{
 			Button button = sender as Button;
-			if(button != null)
+			dig = new DialogInfo(city);
+
+			if (button != null)
 			{
 				switch (button.Name)
 				{
 					case "BtSeoul":
 						city = "서울";
-						DialogInfo digSeoul = new DialogInfo(city);
-						digSeoul.Text = city+"지역 오염지수";
-						digSeoul.Show();
+						dig.Text = "서울지역 오염지수";
+						dig.Show();
 						break;
 					case "BtGyeonggi":
 						city = "경기";
-						DialogInfo digGyeonggi = new DialogInfo(city);
-						digGyeonggi.Text = city + "지역 오염지수";
-						digGyeonggi.Show();
+						dig.Text = "경기지역 오염지수";
+						dig.Show();
 						break;
 					case "BtIncheon":
 						city = "인천";
-						DialogInfo digIncheon = new DialogInfo(city);
-						digIncheon.Text = city + "지역 오염지수";
-						digIncheon.Show();
+						dig.Text = "인천지역 오염지수";
+						dig.Show();
 						break;
 					case "BtGangwon":
 						city = "강원";
-						DialogInfo digGangwon = new DialogInfo(city);
-						digGangwon.Text = city + "지역 오염지수";
-						digGangwon.Show();
+						dig.Text = "강원지역 오염지수";
+						dig.Show();
 						break;
 					case "BtSejong":
 						city = "세종";
-						DialogInfo digSejong = new DialogInfo(city);
-						digSejong.Text = city + "지역 오염지수";
-						digSejong.Show();
+						dig.Text = "세종지역 오염지수";
+						dig.Show();
 						break;
 					case "BtChungbuk":
 						city = "충북";
-						DialogInfo digChungbuk = new DialogInfo(city);
-						digChungbuk.Text = city + "지역 오염지수";
-						digChungbuk.Show();
+						dig.Text = "충북지역 오염지수";
+						dig.Show();
 						break;
 					case "BtChungnam":
 						city = "충남";
-						DialogInfo digChungnam = new DialogInfo(city);
-						digChungnam.Text = city + "지역 오염지수";
-						digChungnam.Show();
+						dig.Text = "충남지역 오염지수";
+						dig.Show();
 						break;
 					case "BtDaejeon":
 						city = "대전";
-						DialogInfo digDaejeon = new DialogInfo(city);
-						digDaejeon.Text = city + "지역 오염지수";
-						digDaejeon.Show();
+						dig.Text = "대전지역 오염지수";
+						dig.Show();
 						break;
 					case "BtGyeongbuk":
 						city = "경북";
-						DialogInfo digGyeongbuk = new DialogInfo(city);
-						digGyeongbuk.Text = city + "지역 오염지수";
-						digGyeongbuk.Show();
+						dig.Text = "경북지역 오염지수";
+						dig.Show();
 						break;
 					case "BtGyeongnam":
 						city = "경남";
-						DialogInfo digGyeongnam = new DialogInfo(city);
-						digGyeongnam.Text = city + "지역 오염지수";
-						digGyeongnam.Show();
+						dig.Text = "경남지역 오염지수";
+						dig.Show();
 						break;
 					case "BtDaegu":
 						city = "대구";
-						DialogInfo digDaegu = new DialogInfo(city);
-						digDaegu.Text = city + "지역 오염지수";
-						digDaegu.Show();
+						dig.Text = "대구지역 오염지수";
+						dig.Show();
 						break;
 					case "BtUlsan":
 						city = "울산";
-						DialogInfo digUlsan = new DialogInfo(city);
-						digUlsan.Text = city + "지역 오염지수";
-						digUlsan.Show();
+						dig.Text = "울산지역 오염지수";
+						dig.Show();
 						break;
 					case "BtBusan":
 						city = "부산";
-						DialogInfo digBusan = new DialogInfo(city);
-						digBusan.Text = city + "지역 오염지수";
-						digBusan.Show();
+						dig.Text = "부산지역 오염지수";
+						dig.Show();
 						break;
 					case "BtJeonbuk":
 						city = "전북";
-						DialogInfo digJeonbuk = new DialogInfo(city);
-						digJeonbuk.Text = city + "지역 오염지수";
-						digJeonbuk.Show();
+						dig.Text = "전북지역 오염지수";
+						dig.Show();
 						break;
 					case "BtJeonnam":
 						city = "전남";
-						DialogInfo digJeonnam = new DialogInfo(city);
-						digJeonnam.Text = city + "지역 오염지수";
-						digJeonnam.Show();
+						dig.Text = "전남지역 오염지수";
+						dig.Show();
 						break;
 					case "BtGwangju":
 						city = "광주";
-						DialogInfo digGwangj = new DialogInfo(city);
-						digGwangj.Text = city + "지역 오염지수";
-						digGwangj.Show();
+						dig.Text = "광주지역 오염지수";
+						dig.Show();
 						break;
 					case "BtJeju":
 						city = "제주";
-						DialogInfo digJeju = new DialogInfo(city);
-						digJeju.Text = city + "지역 오염지수";
-						digJeju.Show();
+						dig.Text = "제주지역 오염지수";
+						dig.Show();
 						break;
 				}
 			}

@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogInfo));
 			this.GridViewInfo = new System.Windows.Forms.DataGridView();
 			this.InfoDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,17 +44,11 @@
 			// 
 			// GridViewInfo
 			// 
+			this.GridViewInfo.AllowUserToAddRows = false;
+			this.GridViewInfo.AllowUserToDeleteRows = false;
 			this.GridViewInfo.AllowUserToResizeColumns = false;
 			this.GridViewInfo.AllowUserToResizeRows = false;
 			this.GridViewInfo.BackgroundColor = System.Drawing.Color.White;
-			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.GridViewInfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this.GridViewInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.GridViewInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.InfoDateTime,
@@ -72,14 +64,6 @@
 			this.GridViewInfo.Location = new System.Drawing.Point(0, 0);
 			this.GridViewInfo.Name = "GridViewInfo";
 			this.GridViewInfo.ReadOnly = true;
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.GridViewInfo.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			this.GridViewInfo.RowHeadersVisible = false;
 			this.GridViewInfo.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
 			this.GridViewInfo.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -171,7 +155,7 @@
 			// 
 			// 
 			this.RootElement.ApplyShapeToControl = true;
-			this.Text = "오염지수";
+			this.Text = "지역별 오염지수";
 			this.ThemeName = "TelerikMetro";
 			this.Load += new System.EventHandler(this.DialogInfo_Load);
 			((System.ComponentModel.ISupportInitialize)(this.GridViewInfo)).EndInit();
